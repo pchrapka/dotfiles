@@ -141,3 +141,84 @@
 ;;color-theme-solarized
 
 (el-get 'sync my-packages)
+
+;;;;;;;;;;;;;;;;;;
+;;
+;; Color theme
+;;
+;;;;;;;;;;;;;;;;;;
+
+;;(load-theme 'zenburn t)
+(load-theme 'solarized-dark t)  ;;ends up being gray in cygwin, no solution found
+
+
+;;;;;;;;;;;;;;;;;;
+;;
+;; hl-line
+;;
+;;;;;;;;;;;;;;;;;;
+;;(set-face-background hl-line-face "gray13")
+(global-hl-line-mode t) ; turn it on for all modes by default
+
+;;;;;;;;;;;;;;;;;;
+;;
+;; Latex
+;;
+;;;;;;;;;;;;;;;;;;
+
+
+;; Load Auctex
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+(require 'tex-mik)
+
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+
+(add-hook 'LaTeX-mode-hook 'visual-line-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+
+;; Turn on Reftex by default
+(setq reftex-enable-partial-scans t)
+(setq reftex-save-parse-info t)
+(setq reftex-use-multiple-selection-buffers t)
+(setq reftex-plug-into-AUCTeX t)
+(setq bib-cite-use-reftex-view-crossref t) 
+;; FIXME
+;;(setq reftex-bibpath-environment-variables
+;;               '("/cygdrive/c/Users/Phil/Documents/School/References/"))
+
+;; Makes emacs notice changes made on disk			
+(global-auto-revert-mode t)
+
+;;;;;;;;;;;;;;;;;;
+;;
+;; Org-mode
+;;
+;;;;;;;;;;;;;;;;;;
+
+;; Getting a copy
+;; cd ~
+;; git clone git://orgmode.org/org-mode.git
+;; Get the tags
+;; git fetch --tags
+;; git tag
+;; git checkout release_7.02
+;;
+;; Or always run the stable release
+;; git checkout -b stable origin/maint
+;; git pull
+;;
+;; Update instructions
+;; git pull
+;; make uncompiled
+
+;; FIXME
+;;(add-to-list 'load-path (expand-file-name "~/org-mode/lisp"))
+;; FIXME
+;;(load-file "~/.emacs.d/el-get-user/packages/init-org-mode.el")
+
+;; TODO Move init-org-mode.el somewhere else
