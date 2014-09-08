@@ -125,6 +125,7 @@
 (setq my-packages
       (append
        '(el-get 
+	 	acutex
 	 	escreen
 	 	color-theme
 	 	color-theme-solarized
