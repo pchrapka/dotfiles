@@ -8,5 +8,6 @@ ln -sb projects/dotfiles/.screenrc .
 ln -sb projects/dotfiles/.bash_profile .
 ln -sb projects/dotfiles/.bashrc .
 ln -sb projects/dotfiles/.bashrc_custom .
+ln -sb projects/dotfiles/.emacs .
 mv .emacs.d .emacs.d~
 ln -s projects/dotfiles/.emacs.d .
