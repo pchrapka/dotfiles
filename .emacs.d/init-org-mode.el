@@ -6,6 +6,10 @@
 
 ;;(add-to-list 'load-path (expand-file-name "~/git/org-mode/lisp"))
 
+;; Add contributions folder
+(add-to-list 'load-path (expand-file-name "~/projects/org-mode/contrib/lisp"))
+
+
 ;; Open up all org files
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
 
@@ -1453,8 +1457,6 @@ Late deadlines first, then scheduled, then non-late deadlines"
 
 
 ;;Checklist Handling
-(add-to-list 'load-path (expand-file-name "~/org-mode/contrib/lisp"))
-
 (require 'org-checklist)
 
 ;;Handling Blocked Tasks
