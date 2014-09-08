@@ -1,7 +1,9 @@
 #!/bin/bash
 ############################
 # makesymlinks.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/projects/dotfiles
+# This script creates symlinks from the home directory 
+# to any desired dotfiles in ~/projects/dotfiles
+# Run this script from the home directory
 ############################
 
 ln -sb projects/dotfiles/.screenrc .
