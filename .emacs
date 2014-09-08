@@ -218,6 +218,13 @@
 ;; make uncompiled
 
 (add-to-list 'load-path (expand-file-name "~/projects/org-mode/lisp"))
-;; FIXME
-;;(load-file "~/.emacs.d/init-org-mode.el")
+(load-file "~/.emacs.d/init-org-mode.el")
 
+;;;;;;;;;;;;;;;;;
+;;
+;; Org Extras
+;;
+;;;;;;;;;;;;;;;;;
+
+;; Org-Collector
+(require 'org-collector)
