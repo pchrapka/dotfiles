@@ -216,9 +216,7 @@
 ;; git pull
 ;; make uncompiled
 
+(add-to-list 'load-path (expand-file-name "~/projects/org-mode/lisp"))
 ;; FIXME
-;;(add-to-list 'load-path (expand-file-name "~/org-mode/lisp"))
-;; FIXME
-;;(load-file "~/.emacs.d/el-get-user/packages/init-org-mode.el")
+;;(load-file "~/.emacs.d/init-org-mode.el")
 
-;; TODO Move init-org-mode.el somewhere else
