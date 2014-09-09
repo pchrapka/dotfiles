@@ -1,3 +1,12 @@
 *~
 .emacs.d/el-get
+.emacs.d/el-get-user
+.emacs.d/elpa
+.emacs.d/request
+.emacs.d/eshell
+.emacs.d/elnode
+.emacs.d/bookmarks
+.emacs.d/url
+.emacs.d/srecode-map.el
+.emacs.d/.*
 .emacs.d/org-clock-save.el
