@@ -79,6 +79,7 @@
   (require 'package)
   (package-initialize)
 
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
   (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
   )
@@ -126,9 +127,9 @@
       (append
        '(el-get 
 	 	auctex
-	 	escreen
 	 	color-theme
 	 	color-theme-solarized
+	 	escreen
 	 	switch-window 
 	 	hl-line+
 	 	fuzzy
@@ -140,6 +141,7 @@
 ;; Other packages
 ;;zenburn-theme
 ;;color-theme-solarized
+;;color-theme
 
 (el-get 'sync my-packages)
 
@@ -151,7 +153,10 @@
 
 ;;(load-theme 'zenburn t)
 (load-theme 'solarized-dark t)  ;;ends up being gray in cygwin, no solution found
-
+;;(require 'color-theme)
+;;(color-theme-initialize)
+;;(color-theme-solarized-dark)
+;; Read this http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
 
 ;;;;;;;;;;;;;;;;;;
 ;;
@@ -217,6 +222,11 @@
 ;; git pull
 ;; make uncompiled
 
+;; follow symlinks and don't ask
+;; all org files are symlinked
+(setq  vc-follow-symlinks t)
+
+;; load org-mode
 (add-to-list 'load-path (expand-file-name "~/projects/org-mode/lisp"))
 (load-file "~/.emacs.d/init-org-mode.el")
 
@@ -228,3 +238,5 @@
 
 ;; Org-Collector
 (require 'org-collector)
+
+
