@@ -204,8 +204,6 @@
                (file "~/projects/org/templates/yearlyreview.tmplt") :clock-in t :clock-resume t)
 	      ("rp" "Project Review" entry (file "~/projects/org/refile.org")
 	       (file "~/projects/org/templates/review.tmplt") :clock-in t :clock-resume t)
-	      ("rt" "Tap Log Review" entry (file+datetree "~/projects/org/journal.org")
-	       (file "~/projects/org/templates/taplogreview.tmplt") :clock-in t :clock-resume t)
 	      ("s" "School")
 	      ("sl" "Lab" entry (file "~/projects/org/refile.org")
 	       (file "~/projects/org/templates/lab.tmplt") :clock-in t :clock-resume t)
