@@ -207,6 +207,9 @@
 	      ("s" "School")
 	      ("sl" "Lab" entry (file "~/projects/org/refile.org")
 	       (file "~/projects/org/templates/lab.tmplt") :clock-in t :clock-resume t)
+	      ("l" "Life")
+	      ("lr" "Rebalance Portforlio" entry (file+headline "~/projects/org/personal.org" "Financial" "Investments")
+               (file "~/projects/org/templates/rebalance.tmplt") :clock-in t :clock-resume t)
 	      )))
 
 

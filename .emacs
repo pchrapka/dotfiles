@@ -66,6 +66,26 @@
 ;; (global-set-key "\M-h" 'backward-delete-word)
 ;; (global-set-key "\M-u" 'zap-to-char)
 
+;; ------------
+;; -- Macros from ergoemacs
+;; ------------
+;; easy keys to split window. Key based on ErgoEmacs keybinding
+(global-set-key (kbd "M-3") 'delete-other-windows) ; expand current pane
+(global-set-key (kbd "M-4") 'split-window-vertically) ; split pane top/bottom
+(global-set-key (kbd "M-2") 'delete-window) ; close current pane
+(global-set-key (kbd "M-s") 'other-window) ; cursor to other pane
+
+;; make cursor movement keys under right hand's home-row.
+(global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
+(global-set-key (kbd "M-l") 'forward-char)  ; was downcase-word
+(global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop
+(global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
+
+(global-set-key (kbd "M-SPC") 'set-mark-command) ; was just-one-space
+(global-set-key (kbd "M-a") 'execute-extended-command) ; was backward-sentence
+
+;; turn on ibuffer
+(defalias 'list-buffers 'ibuffer)
 
 ;;;;;;;;;;;;;;;;;;
 ;;
