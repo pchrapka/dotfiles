@@ -176,6 +176,8 @@
                "* %?\n%U\n" :clock-in t :clock-resume t)
 	      ("jr" "Research Journal Entry" entry (file+headline "~/projects/research-notebook/research-notebook.org" "Inbox")
                "* Entry%?\n%U\n" :clock-in t :clock-resume t)
+	      ("jn" "Reading Index Entry" entry (file+headline "~/projects/research-notebook/reading-index.org" "Inbox")
+               "* Entry%?\n%U\n")
               ("w" "org-protocol" entry (file "~/projects/org/refile.org")
                "* TODO Review %c\n%U\n" :immediate-finish t)
               ("h" "Habit" entry (file "~/projects/org/refile.org")
