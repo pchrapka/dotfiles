@@ -153,7 +153,8 @@
 	 	switch-window 
 	 	hl-line+
 	 	fuzzy
-	 	smex)
+	 	smex
+		markdown-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 (progn (print 'my-packages))
 (progn (print 'el-get-sources))

@@ -172,7 +172,8 @@ PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
-set -o noclobber
+#set -o noclobber
+# causes problems with ssh-agent set up
 
 # 2.2) Listing, directories, and motion
 alias ls="ls --color=auto"
